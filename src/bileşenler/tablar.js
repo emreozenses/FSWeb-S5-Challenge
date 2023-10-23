@@ -3,8 +3,8 @@ import axios from "axios";
 const Tablar = (data) => {
   const topicsDiv = document.createElement("div");
   topicsDiv.className = "topics";
-  const konuArr = data.konular;
-  konuArr.forEach((topic) => {
+  const konu = data.konular;
+  konu.forEach((topic) => {
     const tabDiv = document.createElement("div");
     tabDiv.className = "tab";
     tabDiv.textContent = topic;
